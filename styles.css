@@ -2,6 +2,21 @@
     font-family: StarJedi;
     src: url(./fonts/Starjedi.ttf);
 }
+
+@font-face {
+    font-family: StarJhol;
+    src: url(./fonts/Starjhol.ttf);
+}
+
+@font-face {
+    font-family: StarJout;
+    src: url(./fonts/Starjout.ttf);
+}
+
+@font-face {
+    font-family: StarJedise;
+    src: url(./fonts/STJEDISE.TTF);
+}
  
 :root{
     --swblue: #132248;
@@ -14,7 +29,7 @@ body{
     margin: 0%;
     display: flex;
     flex-direction: column;
-    font-family: StarJedi, sans-serif;
+    font-family: StarJedise, sans-serif;
 }
 
 header{
@@ -43,13 +58,13 @@ header{
     -webkit-text-stroke: 0.5px gold;
 }
 .links:hover{
-    text-decoration: underline;
+    background-color: hsla(51, 100%, 50%,0.3);
 }
 
 #main{
     
     -webkit-text-stroke: 1px gold;
-    font-size:xx-large;
+    font-size:x-large;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -88,21 +103,27 @@ header{
 }
 
 .jedi{
-    padding: 1vw;
+    padding: 1%;
     border: 3px solid goldenrod;
     border-radius: 10px;
     display: flex;
     color: black;
     -webkit-text-stroke: 1px gold;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: black;
-    
+    font-size: small;
+    font-family: StarJedise;
+    width:20vw;
 }
 
 .jedi-img{
-    height: 30vh;
+    width:15vw;
     border-radius: 10px;
+}
+
+.jedi > p{
+    width: 70%;
 }
 
 #quote{
